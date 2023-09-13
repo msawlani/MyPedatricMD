@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPedatricMD</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPedatricMD.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <table cellpadding="0" width="100%" cellspacing="0" style="background-color: #7ec5ff;" class="fullwidth">
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="text-align: center;" class="section rsp_header Header-LogoLeft-PhoneRight">
+                            <table cellpadding="0" width="100%" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="~/icon-512.png" />
+                                            <a href="../pdf/md-logo.png" target="_self"><img width="650" title="MD Pediatric Center Logo" src="../pdf/md-logo.png" height="92" border="0" alt="MD Pediatric Center Logo" /></a>
+                                        </td>
+                                        <td>
+                                            <div class="phone">
+                                                <div style="font-size: 12px;">
+                                                    <span style="color: #3366ff; text-decoration: none solid #333333;">
+                                                        <strong><font color="#06296b" size="3"><span style="font-size: 20pt;">(708) 425-2880</span></font><span style="font-size: 18pt;"><font color="#06296b" size="3"><br />4400 W 95th Street, Suite 104</font></span></strong>
+                                                    </span>
+                                                </div>
+                                                <div class="companyslogan" style="font-size: 13px;">
+                                                    <div style="font-size: 12px;">
+                                                        <span style="font-size: 18pt; color: #999999; text-decoration: none solid #333333;">
+                                                            <font color="#06296b" size="3"><span><strong>&nbsp;Oak Lawn, IL 60453</strong></span><br /></font>
+                                                        </span>
+                                                    </div>
+                                                    <div style="font-size: 12px;">
+                                                        <span style="text-decoration: none solid #333333; color: #999999;">
+                                                            <strong><span style="font-size: 18pt;"><font color="#06296b" size="3"><a style="color: #999999;" href="https://mycw71.ecwcloud.com/portal9314/jsp/100mp/login.jsp" target="_blank"></a></font></span></strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <strong><span style="color: #000000;"><font size="3">Office Hours: Monday&nbsp;- Friday from 9:00 am to 6:00 pm</font></span></strong>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">MyPedatricMD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <table style="width: 100%; text-align: center;">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        Share this page
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - MyPedatricMD - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>    
+        <div>
+            All right reserved Michael Sawlani
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
