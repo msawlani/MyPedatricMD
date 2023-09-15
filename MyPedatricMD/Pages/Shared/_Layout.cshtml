@@ -6,12 +6,13 @@
     <title>@ViewData["Title"] - MyPedatricMD</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/style/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/style/layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyPedatricMD.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-    <div class="header">
-                <div class="d-flex justify-content-evenly pt-5">
+        <div class="header">
+            <div class="d-flex justify-content-evenly pt-5">
                 <div class="row">
                     <div class="col-12 col-lg-9">
                         <a href="../pdf/md-logo.png" target="_self"></a>
@@ -34,8 +35,8 @@
                     </div>
                 </div>
 
-                  </div>
-                  <div class="text-center fw-bold p-3">Office Hours: Monday - Friday from 9:00 am to 6:00 pm</div>
+            </div>
+            <div class="text-center fw-bold p-3">Office Hours: Monday - Friday from 9:00 am to 6:00 pm</div>
         </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm t bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -57,31 +58,15 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="overflow-hidden">
             @RenderBody()
-        </main>
     </div>
 
-    <table style="width: 100%; text-align: center;">
-        <tbody>
-            <tr>
-                <td>
-                    <p>
-                        Share this page
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="footerLayout py-5 mt-5">
+        <div class="container">            
             &copy; 2023 - MyPedatricMD - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>    
-        <div>
-            All right reserved Michael Sawlani
-        </div>
+            </div>
+
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
