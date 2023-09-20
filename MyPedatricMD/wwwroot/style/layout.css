@@ -2,3 +2,9 @@
   background-color: #06296b;
   color: white;
 }
+body .navbar {
+  background-color: #06296b;
+}
+body .navbar a {
+  color: white;
+}

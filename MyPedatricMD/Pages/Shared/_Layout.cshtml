@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MyPedatricMD</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="~/style/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/style/layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyPedatricMD.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css"/>
 </head>
 <body>
     <header>
@@ -16,7 +18,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-9">
                         <a href="../pdf/md-logo.png" target="_self"></a>
-                        <img width="650" title="MD Pediatric Center Logo" src="@Url.Content("~/images/md-logo.png")" height="92" border="0" alt="MD Pediatric Center Logo" />
+                        <img class="img-fluid" width="650" title="MD Pediatric Center Logo" src="@Url.Content("~/images/md-logo.png")" height="92" border="0" alt="MD Pediatric Center Logo" />
 
                     </div>
                     <div class="col-12 col-lg-3">
@@ -29,7 +31,7 @@
                                 <span>Oak Lawn, IL 60453</span>
                             </div>
                             <div>
-                                <a style="color: #999999;" href="https://mycw71.ecwcloud.com/portal9314/jsp/100mp/login.jsp" target="_blank"></a>
+                                <a href="https://mycw71.ecwcloud.com/portal9314/jsp/100mp/login.jsp" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -38,20 +40,41 @@
             </div>
             <div class="text-center fw-bold p-3">Office Hours: Monday - Friday from 9:00 am to 6:00 pm</div>
         </div>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm t bg-white border-bottom box-shadow mb-3">
+
+        <nav class="navbar navbar-expand-md box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">MyPedatricMD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars text-white"></i>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse justify-content-center">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Providers">Providers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Appointment">Request An Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Pediatrics">Pediatrics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Education">Patient Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Insurances">Insurances Accepted</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Location">Location</a>
                         </li>
                     </ul>
                 </div>
