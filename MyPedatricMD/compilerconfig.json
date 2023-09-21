@@ -6,5 +6,9 @@
   {
     "outputFile": "wwwroot/style/layout.css",
     "inputFile": "wwwroot/style/layout.scss"
+  },
+  {
+    "outputFile": "wwwroot/style/aboutus.css",
+    "inputFile": "wwwroot/style/aboutus.scss"
   }
 ]

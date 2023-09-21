@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/style/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/style/layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyPedatricMD.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/style//aboutus.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css"/>
 </head>
@@ -41,7 +42,7 @@
             <div class="text-center fw-bold p-3">Office Hours: Monday - Friday from 9:00 am to 6:00 pm</div>
         </div>
 
-        <nav class="navbar navbar-expand-md box-shadow mb-3">
+        <nav class="navbar navbar-expand-md box-shadow">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -81,13 +82,15 @@
             </div>
         </nav>
     </header>
-    <div class="overflow-hidden">
+
+        <div class="overflow-hidden">
             @RenderBody()
-    </div>
+        </div>
+
 
     <footer class="footerLayout py-5 mt-5">
         <div class="container">            
-            &copy; 2023 - MyPedatricMD - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - Michael Sawlani - <a asp-area="" asp-page="/Privacy">Privacy</a>
             </div>
 
     </footer>

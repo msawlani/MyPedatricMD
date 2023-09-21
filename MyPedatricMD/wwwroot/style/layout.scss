@@ -2,6 +2,8 @@
     .footerLayout {
         background-color: #06296b;
         color: white;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     .navbar {
@@ -9,6 +11,6 @@
     }
 
     .navbar a {
-        color:white;
+        color: white;
     }
 }
